@@ -24,6 +24,7 @@ const bb = filter((a) => a > 3, [1, 2, 3, 4, 5]);
 console.log(bb);
 
 // ## 3. reduce
+// - 구현 포인트는 fn이 인자 2개라는 점, 기본값을 넘긴다는 부분임
 const reduce = (fn, initValue, iter) => {
   let acc = initValue;
   iter.forEach((item) => {
